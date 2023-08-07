@@ -63,6 +63,7 @@ main {
 .popular::before {
 	content: "Most Popular";
 	display: block;
+	margin-bottom: 3.08px;
 	color: var(--primary);
 	font-weight: 600;
 	font-size: 15.31px;
@@ -106,6 +107,10 @@ main {
 
 .item-info {
 	text-align: left;
+}
+
+.item-info p:not(:last-child) {
+	margin-bottom: 5.88px;
 }
 
 .info-group {
