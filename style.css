@@ -142,6 +142,7 @@ main {
 
 .label-txt,
 .label-count {
+	text-align: left;
 	font-size: 12px;
 	font-weight: 400;
 }
