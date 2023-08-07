@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+@font-face {
+	font-family: "Metropolis", sans-serif;
+	src: url(./assets/fonts/metropolis/Metropolis-Regular.otf);
+}
+
+:root {
+	--primary: #007f61;
+	--inactive-border: #c8c8c8;
+	--active-background: #f4fbf9;
+	--select-border: #d9d9d9;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	accent-color: var(--primary);
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	/* font-family: 'Metropolis', sans-serif; */
+}
+
+main {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.add-to-cart {
+	width: 100%;
+	max-width: 340.73px;
+	border: none;
+	border-top: 1px solid var(--primary);
+	font-size: 14px;
+}
+
+.legend-label {
+	font-family: "Metropolis", sans-serif;
+	font-size: 18.08px;
+	font-weight: 500;
+	background-color: white;
+	padding: 0px 13.56px;
+	color: var(--primary);
+}
+
+.medium-font {
+	line-height: 14.46px;
+	font-weight: 400;
+}
+
+.semi-bold-font {
+	font-weight: 500;
+	line-height: 14.46px;
+	text-align: right;
+}
+
+.popular::before {
+	content: "Most Popular";
+	display: block;
+	color: var(--primary);
+	font-weight: 600;
+	font-size: 15.31px;
+}
+
+.flow {
+	margin-bottom: 18.15px;
+}
+
+#items-container {
+	width: 100%;
+	max-width: 340.73px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 18.08px;
+}
+
+.item {
+	font-family: "Metropolis", sans-serif;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	font-size: 14.46px;
+	border: 1px solid var(--inactive-border);
+	border-radius: 4px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 18.08px;
+}
+
+.item:last-child {
+	margin-bottom: 18.15px;
+}
+
+.item-content {
+	display: flex;
+	flex-direction: row;
+	gap: 18.08px;
+}
+
+.item-info {
+	text-align: left;
+}
+
+.info-group {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.active {
+	font-family: "Inter", sans-serif;
+	text-align: right;
+	border: 1px solid var(--primary);
+	background-color: var(--active-background);
+}
+
+.old-price {
+	font-size: 9.94px;
+	align-self: flex-end;
+	opacity: 0.3;
+}
+
+.customize {
+	display: none;
+	grid-template-columns: 1.2fr 3fr 3fr;
+	gap: 7.23px;
+}
+
+.label-txt,
+.label-count {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.label-count {
+	align-self: center;
+	justify-self: end;
+}
+
+.customize > select {
+	border: 1px solid var(--select-border);
+	border-radius: 2px;
+	padding: 7.23px;
+}
+
+.total-info {
+	width: 100%;
+	max-width: 340.73px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.total-info > a {
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: 500;
+	opacity: 0.6;
+	line-height: 16.94px;
+}
+
+.primary-btn {
+	width: 100%;
+	max-width: 340.73px;
+	cursor: pointer;
+	border-radius: 4px 4px 4px 0px;
+	padding: 15px 118px;
+	border: none;
+	color: white;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	background-color: var(--primary);
+}
+
+.primary-btn:hover {
+	opacity: 0.9;
+	transition: opacity 0.3s;
+}
+
+.copyright {
+	margin-top: 8px;
+	width: 100%;
+	max-width: 340.73px;
+	text-align: right;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 12px;
+	display: block;
+}
+
+.symbol {
+	font-style: normal;
+}
